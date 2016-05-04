@@ -7,6 +7,9 @@
                 <ion-item menu-close href="#/app/home">
                     Home
                 </ion-item>
+                <ion-item menu-close href="#/app/basic">
+                    Basic Components
+                </ion-item>
                 <ion-item menu-close href="#/app/buttons">
                     Buttons
                 </ion-item>
@@ -45,11 +48,15 @@
             <ion-nav-buttons side="left">
                 <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
             </ion-nav-buttons>
+            <ion-nav-buttons side="right">
+                <button class="button button-icon button-clear ion-ios-arrow-forward"
+                        ng-click="menu.goToPage()" ng-if="menu.visible()">
+                </button>
+            </ion-nav-buttons>
         </ion-nav-bar>
 
         <ion-nav-view name="menuContent"></ion-nav-view>
 
     </ion-side-menu-content>
-
 
 </ion-side-menus>

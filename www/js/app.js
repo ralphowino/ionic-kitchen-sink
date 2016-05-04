@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic'])
+angular.module('starter', ['ionic', 'ngCordova'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
@@ -17,14 +17,16 @@ angular.module('starter', ['ionic'])
         $stateProvider
             .state('app', {
                 url: "/app",
-                templateUrl: 'templates/menu.html'
+                templateUrl: 'templates/menu.html',
+                controller: 'menuCtrl',
+                controllerAs: 'menu'
             })
-            .state('app.home', {
-                url: "/home",
+            .state('app.basic', {
+                url: "/basic",
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/home.html',
-                        controller: 'homeCtrl'
+                        templateUrl: 'templates/basic.html',
+                        controller: 'basicCtrl'
                     }
                 }
             })
@@ -106,6 +108,15 @@ angular.module('starter', ['ionic'])
                     menuContent: {
                         templateUrl: 'templates/spinners.html',
                         controller: 'spinnersCtrl'
+                    }
+                }
+            })
+            .state('app.home', {
+                url: '/home',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/home.html',
+                        controller: 'homeCtrl'
                     }
                 }
             });

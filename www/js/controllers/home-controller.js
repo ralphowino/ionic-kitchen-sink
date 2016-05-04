@@ -2,10 +2,14 @@
     'use strict';
     angular.module('starter')
         .controller('homeCtrl', homeCtrl);
-    homeCtrl.$inject = ['$scope'];
+    homeCtrl.$inject = [];
 
-    function homeCtrl($scope) {
-        $scope.search = '';
+    function homeCtrl() {
+        init();
+
+        function init() {
+
+        }
     }
 })();
 
