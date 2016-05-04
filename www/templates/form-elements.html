@@ -1,0 +1,66 @@
+<ion-view title="Form Elements">
+    <ion-pane>
+        <ion-content class="padding">
+
+            <p>Radio</p>
+            <ion-list>
+                <ion-radio ng-model="choice" ng-value="'A'">Radio 1</ion-radio>
+                <ion-radio ng-model="choice" ng-value="'B'">Radio 2</ion-radio>
+            </ion-list>
+
+            <p>Checkbox</p>
+            <ion-list>
+                <ion-checkbox ng-model="filter.blue">Checkbox A</ion-checkbox>
+                <ion-checkbox ng-model="filter.yellow">Checkbox B</ion-checkbox>
+                <ion-checkbox ng-model="filter.pink">Checkbox C</ion-checkbox>
+            </ion-list>
+
+            <p>Toggle</p>
+            <ul class="list">
+
+                <li class="item item-toggle">
+                    Toggle
+                    <label class="toggle toggle-assertive">
+                        <input type="checkbox">
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+            <div class="list">
+                <div class="item range range-positive">
+                    <i class="icon ion-ios-sunny-outline"></i>
+                    <input type="range" name="volume" min="0" max="100" value="33">
+                    <i class="icon ion-ios-sunny"></i>
+                </div>
+            </div>
+            <div class="list">
+
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Yoghurt
+                    </div>
+                    <select>
+                        <option>Chocolate</option>
+                        <option selected>Vanilla</option>
+                        <option>Strawberry</option>
+                    </select>
+                </label>
+
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search">
+                </label>
+            </div>
+            <div class="list padding">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Email</span>
+                    <input type="text" placeholder="Email">
+                </label>
+            </div>
+        </ion-content>
+    </ion-pane>
+</ion-view>
