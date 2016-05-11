@@ -1,0 +1,30 @@
+<ion-view title='Native Components'>
+
+    <ion-pane>
+
+        <ion-content>
+
+            <div class="list padding">
+                <div class="item item-input-inset">
+                    <label class="item-input-wrapper" id="search-input">
+                        <i class="icon ion-search placeholder-icon"></i>
+                        <input type="text"
+                               placeholder="Search"
+                               ng-model="native.search"
+                               ng-change="native.filter(native.search)"
+                               ng-model-options="{updateOn: 'blur'}">
+                    </label>
+                </div>
+            </div>
+            <div class="row row-center">
+                <div class="col col-center">
+                    <a ui-sref="{{element.page}}" class="button button-block button-outline button-dark"
+                       ng-repeat="element in native.filteredElements track by $index">
+                        {{element.name}}
+                    </a>
+                </div>
+            </div>
+        </ion-content>
+
+    </ion-pane>
+</ion-view>

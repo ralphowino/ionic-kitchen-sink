@@ -1,0 +1,33 @@
+{
+  "name": "ionic-tinder-cards-2",
+  "version": "1.0.4",
+  "homepage": "https://github.com/loringdodge/ionic-ion-tinder-cards-2",
+  "authors": [
+    "Max Lynch <max@drifty.com>",
+    "Loring Dodge <loringdodge@gmail.com>"
+  ],
+  "ignore": [
+    "*",
+    "!example/*",
+    "!screenshots/*"
+  ],
+  "description": "An extension of the tinder-style card UI for Ionic apps",
+  "main": [
+    "ionic.tdcards2.css",
+    "ionic.tdcards2.js"
+  ],
+  "keywords": [
+    "mobile",
+    "html5",
+    "ionic",
+    "cordova",
+    "phonegap",
+    "tinder",
+    "angularjs",
+    "angular"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "collide": "1.0.0-beta.3"
+  }
+}

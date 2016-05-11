@@ -1,62 +1,13 @@
-<ion-side-menus>
-
-    <ion-side-menu side="left">
-        <ion-header-bar class="bar-positive"></ion-header-bar>
-        <ion-content>
-            <ion-list>
-                <ion-item menu-close href="#/app/home">
-                    Home
-                </ion-item>
-                <ion-item menu-close href="#/app/basic">
-                    Basic Components
-                </ion-item>
-                <ion-item menu-close href="#/app/buttons">
-                    Buttons
-                </ion-item>
-                <ion-item menu-close href="#/app/form">
-                    Form Elements
-                </ion-item>
-                <ion-item menu-close href="#/app/list">
-                    List View
-                </ion-item>
-                <ion-item menu-close href="#/app/tabs">
-                    Tabs
-                </ion-item>
-                <ion-item menu-close href="#/app/popup">
-                    Popup Alerts
-                </ion-item>
-                <ion-item menu-close href="#/app/headers">
-                    Headers
-                </ion-item>
-                <ion-item menu-close href="#/app/cards">
-                    Cards
-                </ion-item>
-                <ion-item menu-close href="#/app/spinners">
-                    Spinners
-                </ion-item>
-                <ion-item menu-close href="#/app/footers">
-                    Footers
-                </ion-item>
-            </ion-list>
-        </ion-content>
-    </ion-side-menu>
-
-    <ion-side-menu-content>
-
+<ion-view title='Ionic Kitchen Sink' hide-back-button="true">
+    <ion-content>
         <ion-nav-bar class="bar-positive">
             <ion-nav-back-button></ion-nav-back-button>
-            <ion-nav-buttons side="left">
-                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
-            </ion-nav-buttons>
             <ion-nav-buttons side="right">
-                <button class="button button-icon button-clear ion-ios-arrow-forward"
+                <button class="button button-icon button-clear ion-share"
                         ng-click="menu.goToPage()" ng-if="menu.visible()">
                 </button>
             </ion-nav-buttons>
         </ion-nav-bar>
-
         <ion-nav-view name="menuContent"></ion-nav-view>
-
-    </ion-side-menu-content>
-
-</ion-side-menus>
+    </ion-content>
+</ion-view>

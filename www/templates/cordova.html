@@ -1,0 +1,17 @@
+<ion-view title='Cordova Plugins'>
+
+    <ion-pane>
+
+        <ion-content class="padding">
+            <div class="row row-center">
+                <div class="col col-center">
+                    <a ui-sref="{{element.page}}" class="button button-block button-outline button-dark"
+                       ng-repeat="element in cordova.filteredPlugins">
+                        {{element.name}}
+                    </a>
+                </div>
+            </div>
+        </ion-content>
+
+    </ion-pane>
+</ion-view>

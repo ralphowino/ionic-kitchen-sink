@@ -5,7 +5,14 @@
     tabsCtrl.$inject = [];
 
     function tabsCtrl() {
+        var vm = this;
+        vm.init = init;
 
+        init();
+
+        function init(){
+
+        }
     }
 })();
 

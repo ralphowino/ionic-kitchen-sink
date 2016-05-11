@@ -2,8 +2,17 @@
     <ion-pane>
         <ion-content class="padding">
             <div style="padding-top: 30%;">
-                <button class="button button-block button-positive" ng-click="showPopup()">
-                    Click Me For Popup
+                <button class="button button-block button-positive" ng-click="popup.showPopup()">
+                     Show Popup
+                </button>
+                <button class="button button-block button-positive" ng-click="popup.confirmPopup()">
+                    Confirm Popup
+                </button>
+                <button class="button button-block button-positive" ng-click="popup.alertPopup()">
+                    Alert Popup
+                </button>
+                <button class="button button-block button-positive" ng-click="popup.promptPopup()">
+                    Prompt Popup
                 </button>
             </div>
         </ion-content>

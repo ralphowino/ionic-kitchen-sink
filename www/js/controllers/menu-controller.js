@@ -6,8 +6,17 @@
 
     function menuCtrl($state, $cordovaInAppBrowser) {
         var vm = this;
+        vm.init = init;
         vm.goToPage = goToPage;
         vm.visible = visible;
+
+        vm.components = {
+
+        };
+
+        function init() {
+
+        }
 
         function goToPage() {
             var options = {
@@ -48,7 +57,7 @@
         }
 
         function visible() {
-            if ($state.current.name == 'app.home' || $state.current.name == 'app.basic') {
+            if ($state.current.name == 'app.home' || $state.current.name == 'app.native') {
                 return false;
             }
             return true;

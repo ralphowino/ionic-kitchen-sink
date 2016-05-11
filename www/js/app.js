@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'ngCordova'])
+angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.tinderCards2'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
@@ -18,15 +18,36 @@ angular.module('starter', ['ionic', 'ngCordova'])
             .state('app', {
                 url: "/app",
                 templateUrl: 'templates/menu.html',
+                abstract: true,
                 controller: 'menuCtrl',
                 controllerAs: 'menu'
             })
-            .state('app.basic', {
-                url: "/basic",
+            .state('app.home', {
+                url: '/home',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/basic.html',
-                        controller: 'basicCtrl'
+                        templateUrl: 'templates/home.html',
+                        controller: 'homeCtrl'
+                    }
+                }
+            })
+            .state('app.native', {
+                url: "/native",
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/native.html',
+                        controller: 'nativeCtrl',
+                        controllerAs: 'native'
+                    }
+                }
+            })
+            .state('app.cordova', {
+                url: "/cordova",
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/cordova.html',
+                        controller: 'cordovaCtrl',
+                        controllerAs: 'cordova'
                     }
                 }
             })
@@ -35,6 +56,15 @@ angular.module('starter', ['ionic', 'ngCordova'])
                 views: {
                     menuContent: {
                         templateUrl: 'templates/buttons.html',
+                        controller: 'buttonsCtrl'
+                    }
+                }
+            })
+            .state('app.sidebar', {
+                url: '/sidebar',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/sidebar.html',
                         controller: 'buttonsCtrl'
                     }
                 }
@@ -57,21 +87,13 @@ angular.module('starter', ['ionic', 'ngCordova'])
                     }
                 }
             })
-            .state('app.tabs', {
-                url: '/tabs',
-                views: {
-                    menuContent: {
-                        templateUrl: 'templates/tabs.html',
-                        controller: 'tabsCtrl'
-                    }
-                }
-            })
             .state('app.popup-alerts', {
                 url: '/popup',
                 views: {
                     menuContent: {
                         templateUrl: 'templates/popup.html',
-                        controller: 'popupCtrl'
+                        controller: 'popupCtrl',
+                        controllerAs: 'popup'
                     }
                 }
             })
@@ -80,25 +102,18 @@ angular.module('starter', ['ionic', 'ngCordova'])
                 views: {
                     menuContent: {
                         templateUrl: 'templates/cards.html',
-                        controller: 'cardsCtrl'
+                        controller: 'cardsCtrl',
+                        controllerAs: 'cards'
                     }
                 }
             })
-            .state('app.headers', {
-                url: '/headers',
+            .state('app.headers-footers', {
+                url: '/headers-footers',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/headers.html',
-                        controller: 'headersCtrl'
-                    }
-                }
-            })
-            .state('app.footers', {
-                url: '/footers',
-                views: {
-                    menuContent: {
-                        templateUrl: 'templates/footers.html',
-                        controller: 'footersCtrl'
+                        templateUrl: 'templates/headers-footers.html',
+                        controller: 'headersCtrl',
+                        controllerAs: 'headers'
                     }
                 }
             })
@@ -111,12 +126,73 @@ angular.module('starter', ['ionic', 'ngCordova'])
                     }
                 }
             })
-            .state('app.home', {
-                url: '/home',
+            .state('app.tabs', {
+                url: '/tabs',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/home.html',
-                        controller: 'homeCtrl'
+                        templateUrl: 'templates/tabs.html',
+                        controller: 'tabsCtrl',
+                        controllerAs: 'tabs'
+                    }
+                }
+            })
+            .state('app.browser', {
+                url: '/browser',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/browser.html',
+                        controller: 'browserCtrl',
+                        controllerAs: 'browser'
+                    }
+                }
+            })
+            .state('app.geo', {
+                url: '/geo',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/geo.html',
+                        controller: 'geoCtrl',
+                        controllerAs: 'geo'
+                    }
+                }
+            })
+            .state('app.vibration', {
+                url: '/vibration',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/vibration.html',
+                        controller: 'vibrationCtrl',
+                        controllerAs: 'vibration'
+                    }
+                }
+            })
+            .state('app.file', {
+                url: '/file',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/file.html',
+                        controller: 'fileCtrl',
+                        controllerAs: 'file'
+                    }
+                }
+            })
+            .state('app.media', {
+                url: '/media',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/media.html',
+                        controller: 'mediaCtrl',
+                        controllerAs: 'media'
+                    }
+                }
+            })
+            .state('app.camera', {
+                url: '/camera',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/camera.html',
+                        controller: 'cameraCtrl',
+                        controllerAs: 'camera'
                     }
                 }
             });

@@ -2,65 +2,177 @@
     <ion-pane>
         <ion-content class="padding">
 
-            <p>Radio</p>
-            <ion-list>
-                <ion-radio ng-model="choice" ng-value="'A'">Radio 1</ion-radio>
-                <ion-radio ng-model="choice" ng-value="'B'">Radio 2</ion-radio>
-            </ion-list>
+            <section class="portlet">
+                <p> Radio </p>
+                <ion-list>
+                    <ion-radio ng-model="choice" ng-value="'A'">Lord of the Rings</ion-radio>
+                    <ion-radio ng-model="choice" ng-value="'B'">The Hobbit</ion-radio>
+                    <ion-radio ng-model="choice" ng-value="'C'">The Silmarillion</ion-radio>
+                </ion-list>
+            </section>
 
-            <p>Checkbox</p>
-            <ion-list>
-                <ion-checkbox ng-model="filter.blue">Checkbox A</ion-checkbox>
-                <ion-checkbox ng-model="filter.yellow">Checkbox B</ion-checkbox>
-                <ion-checkbox ng-model="filter.pink">Checkbox C</ion-checkbox>
-            </ion-list>
+            <section class="portlet">
+                <p>Checkbox</p>
+                <ion-list>
+                    <ion-checkbox ng-model="filter.blue">Iron Man</ion-checkbox>
+                    <ion-checkbox ng-model="filter.yellow">Black Widow</ion-checkbox>
+                    <ion-checkbox ng-model="filter.pink">Thor</ion-checkbox>
+                </ion-list>
+            </section>
+            <section class="portlet">
+                <p>Toggle</p>
+                <ul class="list">
+                    <li class="item item-toggle">
+                        Toggle Assertive
+                        <label class="toggle toggle-assertive">
+                            <input type="checkbox">
 
-            <p>Toggle</p>
-            <ul class="list">
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Light
+                        <label class="toggle toggle-light">
+                            <input type="checkbox">
 
-                <li class="item item-toggle">
-                    Toggle
-                    <label class="toggle toggle-assertive">
-                        <input type="checkbox">
-                        <div class="track">
-                            <div class="handle"></div>
-                        </div>
-                    </label>
-                </li>
-            </ul>
-            <div class="list">
-                <div class="item range range-positive">
-                    <i class="icon ion-ios-sunny-outline"></i>
-                    <input type="range" name="volume" min="0" max="100" value="33">
-                    <i class="icon ion-ios-sunny"></i>
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Stable
+                        <label class="toggle toggle-stable">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Positive
+                        <label class="toggle toggle-positive">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Calm
+                        <label class="toggle toggle-calm">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Balanced
+                        <label class="toggle toggle-balanced">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Energized
+                        <label class="toggle toggle-energized">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Royal
+                        <label class="toggle toggle-royal">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Dark
+                        <label class="toggle toggle-dark">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <section class="portlet">
+                <p>Range</p>
+
+                <div class="list">
+                    <div class="item range range-positive">
+                        <i class="icon ion-ios-sunny-outline"></i>
+                        <input type="range" name="volume" min="0" max="100" value="33">
+                        <i class="icon ion-ios-sunny"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="list">
-
+            </section>
+            <section class="portlet">
+                <p>Select</p>
                 <label class="item item-input item-select">
                     <div class="input-label">
-                        Yoghurt
+                        Jedi Master
                     </div>
                     <select>
-                        <option>Chocolate</option>
-                        <option selected>Vanilla</option>
-                        <option>Strawberry</option>
+                        <option selected>Yoda</option>
+                        <option>Mace Windu</option>
+                        <option>Obi Wan Kenobi</option>
                     </select>
                 </label>
-
-            </div>
-            <div class="list list-inset">
+            </section>
+            <section class="portlet">
+                <p>Other Elements</p>
+                <label class="item item-input">
+                    <span class="input-label">Text</span>
+                    <input type="text">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Email</span>
+                    <input type="email">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Tel</span>
+                    <input type="tel">
+                </label>
                 <label class="item item-input">
                     <i class="icon ion-search placeholder-icon"></i>
-                    <input type="text" placeholder="Search">
+                    <input type="search" placeholder="Search">
                 </label>
-            </div>
-            <div class="list padding">
-                <label class="item item-input item-floating-label">
-                    <span class="input-label">Email</span>
-                    <input type="text" placeholder="Email">
+                <label class="item item-input">
+                    <span class="input-label">Number</span>
+                    <input type="number">
                 </label>
-            </div>
+                <label class="item item-input">
+                    <span class="input-label">Date</span>
+                    <input type="date">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Month</span>
+                    <input type="month">
+                </label>
+            </section>
         </ion-content>
     </ion-pane>
 </ion-view>

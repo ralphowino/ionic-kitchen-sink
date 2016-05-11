@@ -1,0 +1,23 @@
+<ion-view title='Browser'>
+
+    <ion-pane>
+
+        <ion-content class="padding">
+            <div class="row row-center">
+                <div class="card">
+                    <div class="item item-text-wrap">
+                        <p class="padding">
+                            Latitude:{{geo.lat}}</br>
+                            Longitude:{{geo.long}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="button button-block button-positive browser-button"
+                    ng-click="geo.getLocation()">
+                Get Location
+            </button>
+        </ion-content>
+
+    </ion-pane>
+</ion-view>

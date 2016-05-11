@@ -1,0 +1,16 @@
+<ion-view title='Camera'>
+
+    <ion-pane>
+
+        <ion-content class="padding">
+            <div class="row row-center">
+                <img ng-src="{{camera.imageSrc}}">
+            </div>
+            <button class="button button-block button-positive browser-button"
+                    ng-click="camera.getPhoto()">
+                Take Photo
+            </button>
+        </ion-content>
+
+    </ion-pane>
+</ion-view>

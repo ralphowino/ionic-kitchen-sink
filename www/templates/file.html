@@ -1,0 +1,16 @@
+<ion-view title='File Transfer'>
+
+    <ion-pane>
+
+        <ion-content class="padding">
+            <div class="row row-center">
+                <img ng-src="{{file.imageSrc}}">
+            </div>
+            <button class="button button-block button-positive browser-button"
+                    ng-click="file.download()">
+                Download File
+            </button>
+        </ion-content>
+
+    </ion-pane>
+</ion-view>

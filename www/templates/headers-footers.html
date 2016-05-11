@@ -1,0 +1,22 @@
+<ion-view title="Headers and Footers">
+    <ion-pane>
+        <ion-content>
+
+            <div class="bar bar-header {{headers.class[headers.current]}}">
+                <h1 class="title">{{headers.name}} Header</h1>
+            </div>
+
+            <div class="bar bar-footer {{headers.class[headers.current]}}">
+                <div class="buttons">
+                    <button class="button icon-left ion-chevron-left" ng-click="headers.previous()">Previous</button>
+                </div>
+                <h1 class="title">{{headers.name}} Footer</h1>
+
+                <div class="buttons">
+                    <button class="button icon-right ion-chevron-right" ng-click="headers.next()">Next</button>
+                </div>
+            </div>
+
+        </ion-content>
+    </ion-pane>
+</ion-view>
