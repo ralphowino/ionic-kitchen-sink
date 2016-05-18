@@ -1,4 +1,4 @@
-<ion-view title='Geolocation'>
+<ion-view title='Date Picker'>
 
     <ion-pane>
 
@@ -7,14 +7,14 @@
                 <div class="card">
                     <div class="item item-text-wrap">
                         <p class="padding">
-                            This plugin checks the users geolocation.
+                            This plugin shows a native date or time picker widget.
                         </p>
                     </div>
                 </div>
             </div>
-            <p> Latitude:{{geo.lat}}, Longitude:{{geo.long}}</p>
-            <button class="button button-block button-positive" ng-click="geo.getLocation()">
-                Get Location
+            <p>You picked: {{date.datePicked}}</p>
+            <button class="button button-block button-positive" ng-click="date.date()">
+                Pick a Date
             </button>
         </ion-content>
 

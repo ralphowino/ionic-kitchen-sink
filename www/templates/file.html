@@ -3,11 +3,18 @@
     <ion-pane>
 
         <ion-content class="padding">
+
             <div class="row row-center">
-                <img ng-src="{{file.imageSrc}}">
+                <div class="card">
+                    <div class="item item-text-wrap">
+                        <p class="padding">
+                            This plugin allows you to upload and download files.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <button class="button button-block button-positive browser-button"
-                    ng-click="file.download()">
+            <img ng-src="{{file.imageSrc}}" class="imageClass">
+            <button class="button button-block button-positive" ng-click="file.download()">
                 Download File
             </button>
         </ion-content>

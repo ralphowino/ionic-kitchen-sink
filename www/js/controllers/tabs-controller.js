@@ -2,9 +2,9 @@
     'use strict';
     angular.module('starter')
         .controller('tabsCtrl', tabsCtrl);
-    tabsCtrl.$inject = [];
+    tabsCtrl.$inject = ['$window'];
 
-    function tabsCtrl() {
+    function tabsCtrl($window) {
         var vm = this;
         vm.init = init;
 
@@ -13,6 +13,7 @@
         function init(){
 
         }
+
     }
 })();
 

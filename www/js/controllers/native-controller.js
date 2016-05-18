@@ -72,10 +72,15 @@
 
         function filter(search) {
             search = search.toLowerCase();
-            var items = vm.nativeElements.elements;
-            vm.filteredElements = _.filter(items, function (item) {
-                return (item.tags.indexOf(search) > -1);
-            });
+
+            if (search.trim() == '') {
+                init();
+            } else {
+                var items = vm.nativeElements.elements;
+                vm.filteredElements = _.filter(items, function (item) {
+                    return (item.tags.indexOf(search) > -1);
+                });
+            }
         }
     }
 })();

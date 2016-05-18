@@ -1,4 +1,4 @@
-<ion-view title='Geolocation'>
+<ion-view title='Action Sheet'>
 
     <ion-pane>
 
@@ -7,14 +7,14 @@
                 <div class="card">
                     <div class="item item-text-wrap">
                         <p class="padding">
-                            This plugin checks the users geolocation.
+                            The Action Sheet plugin shows a native sheet of options the user can choose from.
+                            iOS uses the native UIActionSheet. Android uses the native AlertDialog.
                         </p>
                     </div>
                 </div>
             </div>
-            <p> Latitude:{{geo.lat}}, Longitude:{{geo.long}}</p>
-            <button class="button button-block button-positive" ng-click="geo.getLocation()">
-                Get Location
+            <button class="button button-block button-positive"  ng-click="action.action()">
+                Click Me
             </button>
         </ion-content>
 

@@ -1,0 +1,23 @@
+<ion-view title='App Availability'>
+
+    <ion-pane>
+
+        <ion-content class="padding">
+            <div class="row row-center">
+                <div class="card">
+                    <div class="item item-text-wrap">
+                        <p class="padding">
+                           This plugin checks if an application exists on your device, for example, we will be
+                            checking if you have WhatsApp installed in your phone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>{{availability.result}}</p>
+            <button class="button button-block button-positive" ng-click="availability.available()">
+                Check If WhatsApp Exists
+            </button>
+        </ion-content>
+
+    </ion-pane>
+</ion-view>

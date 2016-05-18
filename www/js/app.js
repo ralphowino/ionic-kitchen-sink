@@ -13,6 +13,16 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
             }
         });
     })
+    .config(function ($ionicConfigProvider) {
+        var $injector = angular.injector(['ng']);
+        var $window = $injector.get('$window');
+        if ($window.localStorage.getItem('position') == true) {
+            $ionicConfigProvider.tabs.position('bottom');
+        } else if ($window.localStorage.getItem('position') == false) {
+            $ionicConfigProvider.tabs.position('bottom');
+        }
+
+    })
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('app', {
@@ -48,6 +58,16 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                         templateUrl: 'templates/cordova.html',
                         controller: 'cordovaCtrl',
                         controllerAs: 'cordova'
+                    }
+                }
+            })
+            .state('app.media', {
+                url: '/media',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/media.html',
+                        controller: 'mediaCtrl',
+                        controllerAs: 'media'
                     }
                 }
             })
@@ -176,16 +196,6 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                     }
                 }
             })
-            .state('app.media', {
-                url: '/media',
-                views: {
-                    menuContent: {
-                        templateUrl: 'templates/media.html',
-                        controller: 'mediaCtrl',
-                        controllerAs: 'media'
-                    }
-                }
-            })
             .state('app.camera', {
                 url: '/camera',
                 views: {
@@ -193,6 +203,76 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                         templateUrl: 'templates/camera.html',
                         controller: 'cameraCtrl',
                         controllerAs: 'camera'
+                    }
+                }
+            })
+            .state('app.action', {
+                url: '/action',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/action.html',
+                        controller: 'actionCtrl',
+                        controllerAs: 'action'
+                    }
+                }
+            })
+            .state('app.availability', {
+                url: '/availability',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/availability.html',
+                        controller: 'availabilityCtrl',
+                        controllerAs: 'availability'
+                    }
+                }
+            })
+            .state('app.barcode', {
+                url: '/barcode',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/barcode.html',
+                        controller: 'barcodeCtrl',
+                        controllerAs: 'barcode'
+                    }
+                }
+            })
+            .state('app.date', {
+                url: '/date',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/date.html',
+                        controller: 'dateCtrl',
+                        controllerAs: 'date'
+                    }
+                }
+            })
+            .state('app.toast', {
+                url: '/toast',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/toast.html',
+                        controller: 'toastCtrl',
+                        controllerAs: 'toast'
+                    }
+                }
+            })
+            .state('app.email', {
+                url: '/email',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/email.html',
+                        controller: 'emailCtrl',
+                        controllerAs: 'email'
+                    }
+                }
+            })
+            .state('app.social', {
+                url: '/social',
+                views: {
+                    menuContent: {
+                        templateUrl: 'templates/social.html',
+                        controller: 'socialCtrl',
+                        controllerAs: 'social'
                     }
                 }
             });

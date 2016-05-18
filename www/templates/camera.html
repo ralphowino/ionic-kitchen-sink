@@ -4,9 +4,17 @@
 
         <ion-content class="padding">
             <div class="row row-center">
-                <img ng-src="{{camera.imageSrc}}">
+                <div class="card">
+                    <div class="item item-text-wrap">
+                        <p class="padding">
+                            This plugin accesses the device's camera.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <button class="button button-block button-positive browser-button"
+            <img ng-src="{{camera.imageSrc}}" class="imageClass">
+
+            <button class="button button-block button-positive"
                     ng-click="camera.getPhoto()">
                 Take Photo
             </button>

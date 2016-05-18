@@ -1,4 +1,4 @@
-<ion-view title='Geolocation'>
+<ion-view title='Toast'>
 
     <ion-pane>
 
@@ -7,14 +7,13 @@
                 <div class="card">
                     <div class="item item-text-wrap">
                         <p class="padding">
-                            This plugin checks the users geolocation.
+                            This plugin allows you to show a native Toast (a little text popup) on iOS, Android and WP8.
                         </p>
                     </div>
                 </div>
             </div>
-            <p> Latitude:{{geo.lat}}, Longitude:{{geo.long}}</p>
-            <button class="button button-block button-positive" ng-click="geo.getLocation()">
-                Get Location
+            <button class="button button-block button-positive" ng-click="toast.toast()">
+                Show Toast
             </button>
         </ion-content>
 

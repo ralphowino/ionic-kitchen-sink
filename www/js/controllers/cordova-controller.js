@@ -42,6 +42,41 @@
                     name: 'Media',
                     page: 'app.media',
                     tags: []
+                },
+                {
+                    name: 'Action Sheet',
+                    page: 'app.action',
+                    tags: []
+                },
+                {
+                    name: 'App Availability',
+                    page: 'app.availability',
+                    tags: []
+                },
+                {
+                    name: 'Bar Code Scanner',
+                    page: 'app.barcode',
+                    tags: []
+                },
+                {
+                    name: 'Date Picker',
+                    page: 'app.date',
+                    tags: []
+                },
+                {
+                    name: 'Toast',
+                    page: 'app.toast',
+                    tags: []
+                },
+                {
+                    name: 'Email',
+                    page: 'app.email',
+                    tags: []
+                },
+                {
+                    name: 'Social Sharing',
+                    page: 'app.social',
+                    tags: []
                 }
             ],
             tags: []

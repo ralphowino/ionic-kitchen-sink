@@ -10,7 +10,7 @@
         vm.pause = pause;
         vm.stop = stop;
 
-        vm.src = "C:/Users/Samuel Ndara/Downloads/Music/Work From Home.mp3";
+        vm.src = "media/ode.mp3";
         vm.media = $cordovaMedia.newMedia(vm.src);
 
         function play(){

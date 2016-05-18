@@ -3,22 +3,26 @@
     <ion-pane>
 
         <ion-content class="padding">
+
             <div class="row row-center">
-                <div class="col col-center" style="padding-top: 30%;">
-                    <button class="button button-block button-positive"
-                            ng-click="media.play()">
-                        Play Song
-                    </button>
-                    <button class="button button-block button-positive"
-                            ng-click="media.pause()">
-                        Pause Song
-                    </button>
-                    <button class="button button-block button-positive"
-                            ng-click="media.stop()">
-                        Stop Song
-                    </button>
+                <div class="card">
+                    <div class="item item-text-wrap">
+                        <p class="padding">
+                            This plugin provides the ability to record and play back audio files on a device.
+                        </p>
+                    </div>
                 </div>
             </div>
+
+            <button class="button button-block button-positive" ng-click="media.play()">
+                Play Song
+            </button>
+            <button class="button button-block button-positive" ng-click="media.pause()">
+                Pause Song
+            </button>
+            <button class="button button-block button-positive" ng-click="media.stop()">
+                Stop Song
+            </button>
         </ion-content>
 
     </ion-pane>

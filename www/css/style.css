@@ -4,7 +4,7 @@
     border: 1px solid #d3d3d3;
 }
 
-.portlet p {
+.portlet h4{
     text-align: center;
 }
 
@@ -17,4 +17,16 @@
 .browser-button {
     position: fixed;
     bottom: 0;
+}
+
+.switch{
+    margin-top: 50px;
+}
+
+.imageClass{
+    width: 100%;
+    height: auto!important;
+}
+.middle-header{
+    text-align: center;
 }
