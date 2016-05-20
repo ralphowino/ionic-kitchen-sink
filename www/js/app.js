@@ -13,15 +13,9 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
             }
         });
     })
-    .config(function ($ionicConfigProvider) {
-        var $injector = angular.injector(['ng']);
-        var $window = $injector.get('$window');
-        if ($window.localStorage.getItem('position') == true) {
-            $ionicConfigProvider.tabs.position('bottom');
-        } else if ($window.localStorage.getItem('position') == false) {
-            $ionicConfigProvider.tabs.position('bottom');
-        }
-
+    .constant('Env', {
+        "srcUrl": "http://git.ralphowino.com/ro/ionic-kitchen-sink/blob/master/src/",
+        "name": "local"
     })
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
