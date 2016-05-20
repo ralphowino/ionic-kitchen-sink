@@ -7,14 +7,33 @@
                 <div class="card">
                     <div class="item item-text-wrap">
                         <p class="padding">
-                            The plugin provides access to the standard interface that manages the editing and sending an email message.
+                            The plugin provides access to the standard interface that manages the editing and sending an
+                            email message.
                         </p>
                     </div>
                 </div>
             </div>
-            <button class="button button-block button-positive"  ng-click="email.send()">
-                Send Email
-            </button>
+
+            <form ng-submit="email.send()">
+                <div class="list list-inset">
+                    <label class="item item-input">
+                        <span class="input-label">To</span>
+                        <input type="email" placeholder="example@gmail.com" ng-model="email.to" required/>
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Subject</span>
+                        <input type="text" placeholder="Email subject" ng-model="email.subject" required/>
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Body</span>
+                        <input type="text" placeholder="Email body" ng-model="email.body" required/>
+                    </label>
+                </div>
+
+                <button class="button button-block button-positive" type="submit">
+                    Send Email
+                </button>
+            </form>
         </ion-content>
 
     </ion-pane>

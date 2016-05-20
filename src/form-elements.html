@@ -1,0 +1,178 @@
+<ion-view title="Form Elements">
+    <ion-pane>
+        <ion-content class="padding">
+
+            <section class="portlet">
+                <h4> Radio </h4>
+                <ion-list>
+                    <ion-radio ng-model="choice" ng-value="'A'">Lord of the Rings</ion-radio>
+                    <ion-radio ng-model="choice" ng-value="'B'">The Hobbit</ion-radio>
+                    <ion-radio ng-model="choice" ng-value="'C'">The Silmarillion</ion-radio>
+                </ion-list>
+            </section>
+
+            <section class="portlet">
+                <h4>Checkbox</h4>
+                <ion-list>
+                    <ion-checkbox ng-model="filter.blue">Iron Man</ion-checkbox>
+                    <ion-checkbox ng-model="filter.yellow">Black Widow</ion-checkbox>
+                    <ion-checkbox ng-model="filter.pink">Thor</ion-checkbox>
+                </ion-list>
+            </section>
+            <section class="portlet">
+                <h4>Toggle</h4>
+                <ul class="list">
+                    <li class="item item-toggle">
+                        Toggle Assertive
+                        <label class="toggle toggle-assertive">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Light
+                        <label class="toggle toggle-light">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Stable
+                        <label class="toggle toggle-stable">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Positive
+                        <label class="toggle toggle-positive">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Calm
+                        <label class="toggle toggle-calm">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Balanced
+                        <label class="toggle toggle-balanced">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Energized
+                        <label class="toggle toggle-energized">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Royal
+                        <label class="toggle toggle-royal">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="item item-toggle">
+                        Toggle Dark
+                        <label class="toggle toggle-dark">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <section class="portlet">
+                <h4>Range</h4>
+
+                <div class="list">
+                    <div class="item range range-positive">
+                        <i class="icon ion-ios-sunny-outline"></i>
+                        <input type="range" name="volume" min="0" max="100" value="33">
+                        <i class="icon ion-ios-sunny"></i>
+                    </div>
+                </div>
+            </section>
+            <section class="portlet">
+                <h4>Select</h4>
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Jedi Master
+                    </div>
+                    <select>
+                        <option selected>Yoda</option>
+                        <option>Mace Windu</option>
+                        <option>Obi Wan Kenobi</option>
+                    </select>
+                </label>
+            </section>
+            <section class="portlet">
+                <h4>Other Elements</h4>
+                <label class="item item-input">
+                    <span class="input-label">Text</span>
+                    <input type="text">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Email</span>
+                    <input type="email">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Tel</span>
+                    <input type="tel">
+                </label>
+                <label class="item item-input">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="search" placeholder="Search">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Number</span>
+                    <input type="number">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Date</span>
+                    <input type="date">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Month</span>
+                    <input type="month">
+                </label>
+            </section>
+        </ion-content>
+    </ion-pane>
+</ion-view>

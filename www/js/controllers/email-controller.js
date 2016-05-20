@@ -8,30 +8,25 @@
         var vm = this;
         vm.send = send;
 
+        vm.to = '';
+        vm.subject = '';
+        vm.body = '';
+
         function send() {
             $cordovaEmailComposer.isAvailable().then(function () {
-                // is available
+                var email = {
+                    to: vm.to,
+                    subject: vm.subject,
+                    body: vm.body,
+                    isHtml: true
+                };
+                $cordovaEmailComposer.open(email).then(function () {
+
+                }, function () {
+                    console.log("User cancelled email");
+                });
             }, function () {
-                // not available
-            });
-
-            var email = {
-                to: 'max@mustermann.de',
-                cc: 'erika@mustermann.de',
-                bcc: ['john@doe.com', 'jane@doe.com'],
-                attachments: [
-                    'file://img/logo.png',
-                    'res://icon.png',
-                    'base64:icon.png//iVBORw0KGgoAAAANSUhEUg...',
-                    'file://README.pdf'
-                ],
-                subject: 'Cordova Icons',
-                body: 'How are you? Nice greetings from Leipzig',
-                isHtml: true
-            };
-
-            $cordovaEmailComposer.open(email).then(null, function () {
-                // user cancelled email
+                console.log("Email is not available");
             });
         }
     }

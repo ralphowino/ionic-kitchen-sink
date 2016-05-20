@@ -11,13 +11,13 @@
         vm.shareWhatsapp = shareWhatsapp;
         vm.message = "Go home";
         vm.image = 'media/yoda.png';
-        vm.link='';
+        vm.link = '';
+        vm.feedback = '';
 
         function shareTwitter() {
-            console.log("tt");
             $cordovaSocialSharing.shareViaTwitter(vm.message, vm.image, vm.link)
                 .then(function (result) {
-                    // Success!
+                    vm.feedback = 'You have shared via Twitter';
                 }, function (err) {
                     // An error occurred. Show a message to the user
                 });
@@ -25,20 +25,18 @@
         }
 
         function shareWhatsapp() {
-            console.log("tt");
             $cordovaSocialSharing.shareViaWhatsApp(vm.message, vm.image, vm.link)
                 .then(function (result) {
-                    // Success!
+                    vm.feedback = 'You have shared via Whatsapp';
                 }, function (err) {
                     // An error occurred. Show a message to the user
                 });
         }
 
         function shareFacebook() {
-            console.log("tt");
             $cordovaSocialSharing.shareViaFacebook(vm.message, vm.image, vm.link)
                 .then(function (result) {
-                    // Success!
+                    vm.feedback = 'You have shared via Facebook';
                 }, function (err) {
                     // An error occurred. Show a message to the user
                 });

@@ -12,7 +12,31 @@
                     </div>
                 </div>
             </div>
+
             <img ng-src="{{camera.imageSrc}}" class="imageClass">
+
+            <p>Image Quality</p>
+
+            <div class="item range">
+                <i class="icon ion-minus"></i>
+                <input type="range" name="quality" min="0" max="100" ng-model="camera.quality">
+                <i class="icon ion-plus"></i>
+            </div>
+
+            <p>Height and Width</p>
+
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">Width</span>
+                    <input type="number" ng-model="camera.targetWidth">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Height</span>
+                    <input type="number" ng-model="camera.targetHeight">
+                </label>
+            </div>
+
+
 
             <button class="button button-block button-positive"
                     ng-click="camera.getPhoto()">
