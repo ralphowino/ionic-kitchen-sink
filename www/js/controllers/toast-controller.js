@@ -9,7 +9,7 @@
         vm.toast = toast;
 
         function toast() {
-            $cordovaToast.show('Here is a message', 'long', 'center')
+            $cordovaToast.show('This is a toast from Jedi Master Yoda, after the execution of order 66', 'long', 'top')
                 .then(function (success) {
                     // success
                 }, function (error) {

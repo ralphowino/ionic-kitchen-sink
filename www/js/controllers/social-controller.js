@@ -9,13 +9,11 @@
         vm.shareTwitter = shareTwitter;
         vm.shareFacebook = shareFacebook;
         vm.shareWhatsapp = shareWhatsapp;
-        vm.message = "Go home";
-        vm.image = 'media/yoda.png';
-        vm.link = '';
+        vm.message = "Default message";
         vm.feedback = '';
 
         function shareTwitter() {
-            $cordovaSocialSharing.shareViaTwitter(vm.message, vm.image, vm.link)
+            $cordovaSocialSharing.shareViaTwitter(vm.message)
                 .then(function (result) {
                     vm.feedback = 'You have shared via Twitter';
                 }, function (err) {
@@ -25,7 +23,7 @@
         }
 
         function shareWhatsapp() {
-            $cordovaSocialSharing.shareViaWhatsApp(vm.message, vm.image, vm.link)
+            $cordovaSocialSharing.shareViaWhatsApp(vm.message)
                 .then(function (result) {
                     vm.feedback = 'You have shared via Whatsapp';
                 }, function (err) {
@@ -34,7 +32,7 @@
         }
 
         function shareFacebook() {
-            $cordovaSocialSharing.shareViaFacebook(vm.message, vm.image, vm.link)
+            $cordovaSocialSharing.shareViaFacebook(vm.message)
                 .then(function (result) {
                     vm.feedback = 'You have shared via Facebook';
                 }, function (err) {

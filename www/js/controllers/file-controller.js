@@ -12,7 +12,7 @@
             document.addEventListener('deviceready', function () {
 
                 var url = "http://vignette2.wikia.nocookie.net/disney/images/9/95/Master_Yoda.png";
-                var targetPath = cordova.file.dataDirectory + "yoda.png";
+                var targetPath = cordova.file.externalDataDirectory + "yoda.png";
                 var trustHosts = true;
                 var options = {};
 

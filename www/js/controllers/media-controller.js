@@ -10,7 +10,7 @@
         vm.pause = pause;
         vm.stop = stop;
 
-        vm.src = "media/ode.mp3";
+        vm.src = '/android_asset/www/media/ode.mp3';
         vm.media = $cordovaMedia.newMedia(vm.src);
 
         function play(){
