@@ -1,0 +1,16 @@
+<ion-view title='ion-refresher '>
+
+    <ion-pane>
+
+        <ion-content class="padding">
+            <ion-refresher pulling-text="Pull to refresh..." on-refresh="content.doRefresh()"></ion-refresher>
+
+            <ion-list>
+                <ion-item ng-repeat="item in content.items track by $index">
+                    {{item}}
+                </ion-item>
+            </ion-list>
+        </ion-content>
+
+    </ion-pane>
+</ion-view>

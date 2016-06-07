@@ -58,6 +58,49 @@
                     name: 'Spinners',
                     page: 'app.spinners',
                     tags: ['spinner-energized', 'android', 'ios', 'ios-small', 'bubbles', 'circles', 'crescent', 'dots', 'lines', 'ripple', 'spiral']
+                },
+                {
+                    name: 'Action Sheet',
+                    page: 'app.sheet',
+                    tags: []
+                },
+                {
+                    name: 'Grid',
+                    page: 'app.grid',
+                    tags: ['col', 'row']
+                },
+                {
+                    name: 'Backdrop',
+                    page: 'app.backdrop',
+                    tags: ['retain', 'release']
+                },
+                {
+                    name: 'Ion Content Refresher',
+                    page: 'app.content',
+                    tags: ['refresh', 'content', 'refresher']
+                },
+                {
+                    name: 'Loading',
+                    page: 'app.loading',
+                    tags: ['show', 'hide']
+                },
+                {
+                    name: 'Gestures',
+                    page: 'app.gestures',
+                    tags: ['gestures','on-hold', 'on-tap', 'on-double-tap', 'on-touch', 'on-release', 'on-drag', 'on-drag-up',
+                        'on-drag-down', 'on-drag-left', 'on-drag-right', 'on-swipe', 'on-swipe-up', 'on-swipe-right',
+                        'on-swipe-down', 'on-swipe-left'
+                    ]
+                },
+                {
+                    name: 'Modal',
+                    page: 'app.modal',
+                    tags: ['modal']
+                },
+                {
+                    name: 'Popover',
+                    page: 'app.popover',
+                    tags: ['popover']
                 }
 
 

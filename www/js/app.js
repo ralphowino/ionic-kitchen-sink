@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.tinderCards2'])
+angular.module('starter', ['ionic', 'ngCordova', 'ngLodash'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
@@ -59,7 +59,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/media',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/media.html',
+                        templateUrl: 'modules/media/media.html',
                         controller: 'mediaCtrl',
                         controllerAs: 'media'
                     }
@@ -69,7 +69,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/buttons',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/buttons.html',
+                        templateUrl: 'modules/buttons/buttons.html',
                         controller: 'buttonsCtrl'
                     }
                 }
@@ -78,8 +78,8 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/sidebar',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/sidebar.html',
-                        controller: 'buttonsCtrl'
+                        templateUrl: 'modules/sidebar/sidebar.html',
+                        controller: 'sideCtrl'
                     }
                 }
             })
@@ -87,8 +87,18 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/form',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/form-elements.html',
+                        templateUrl: 'modules/form-elements/form-elements.html',
                         controller: 'formCtrl'
+                    }
+                }
+            })
+            .state('app.sheet', {
+                url: '/sheet',
+                views: {
+                    menuContent: {
+                        templateUrl: 'modules/action-sheet/action-sheet.html',
+                        controller: 'sheetCtrl',
+                        controllerAs: 'sheet'
                     }
                 }
             })
@@ -96,7 +106,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/list',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/list-view.html',
+                        templateUrl: 'modules/list-view/list-view.html',
                         controller: 'listCtrl'
                     }
                 }
@@ -105,7 +115,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/popup',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/popup.html',
+                        templateUrl: 'modules/popup/popup.html',
                         controller: 'popupCtrl',
                         controllerAs: 'popup'
                     }
@@ -115,7 +125,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/cards',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/cards.html',
+                        templateUrl: 'modules/cards/cards.html',
                         controller: 'cardsCtrl',
                         controllerAs: 'cards'
                     }
@@ -125,7 +135,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/headers-footers',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/headers-footers.html',
+                        templateUrl: 'modules/headers-footers/headers-footers.html',
                         controller: 'headersCtrl',
                         controllerAs: 'headers'
                     }
@@ -135,7 +145,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/spinners',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/spinners.html',
+                        templateUrl: 'modules/spinners/spinners.html',
                         controller: 'spinnersCtrl'
                     }
                 }
@@ -144,7 +154,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/tabs',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/tabs.html',
+                        templateUrl: 'modules/tabs/tabs.html',
                         controller: 'tabsCtrl',
                         controllerAs: 'tabs'
                     }
@@ -154,7 +164,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/browser',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/browser.html',
+                        templateUrl: 'modules/browser/browser.html',
                         controller: 'browserCtrl',
                         controllerAs: 'browser'
                     }
@@ -164,7 +174,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/geo',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/geo.html',
+                        templateUrl: 'modules/geo/geo.html',
                         controller: 'geoCtrl',
                         controllerAs: 'geo'
                     }
@@ -174,7 +184,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/vibration',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/vibration.html',
+                        templateUrl: 'modules/vibration/vibration.html',
                         controller: 'vibrationCtrl',
                         controllerAs: 'vibration'
                     }
@@ -184,7 +194,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/file',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/file.html',
+                        templateUrl: 'modules/file/file.html',
                         controller: 'fileCtrl',
                         controllerAs: 'file'
                     }
@@ -194,7 +204,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/camera',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/camera.html',
+                        templateUrl: 'modules/camera/camera.html',
                         controller: 'cameraCtrl',
                         controllerAs: 'camera'
                     }
@@ -204,7 +214,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/action',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/action.html',
+                        templateUrl: 'modules/action/action.html',
                         controller: 'actionCtrl',
                         controllerAs: 'action'
                     }
@@ -214,7 +224,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/availability',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/availability.html',
+                        templateUrl: 'modules/availability/availability.html',
                         controller: 'availabilityCtrl',
                         controllerAs: 'availability'
                     }
@@ -224,7 +234,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/barcode',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/barcode.html',
+                        templateUrl: 'modules/barcode/barcode.html',
                         controller: 'barcodeCtrl',
                         controllerAs: 'barcode'
                     }
@@ -234,7 +244,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/date',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/date.html',
+                        templateUrl: 'modules/date/date.html',
                         controller: 'dateCtrl',
                         controllerAs: 'date'
                     }
@@ -244,7 +254,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/toast',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/toast.html',
+                        templateUrl: 'modules/toast/toast.html',
                         controller: 'toastCtrl',
                         controllerAs: 'toast'
                     }
@@ -254,7 +264,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/email',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/email.html',
+                        templateUrl: 'modules/email/email.html',
                         controller: 'emailCtrl',
                         controllerAs: 'email'
                     }
@@ -264,9 +274,79 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash', 'ionic.contrib.ui.t
                 url: '/social',
                 views: {
                     menuContent: {
-                        templateUrl: 'templates/social.html',
+                        templateUrl: 'modules/social/social.html',
                         controller: 'socialCtrl',
                         controllerAs: 'social'
+                    }
+                }
+            })
+            .state('app.grid', {
+                url: '/grid',
+                views: {
+                    menuContent: {
+                        templateUrl: 'modules/grid/grid.html',
+                        controller: 'gridCtrl',
+                        controllerAs: 'grid'
+                    }
+                }
+            })
+            .state('app.backdrop', {
+                url: '/backdrop',
+                views: {
+                    menuContent: {
+                        templateUrl: 'modules/backdrop/backdrop.html',
+                        controller: 'backdropCtrl',
+                        controllerAs: 'backdrop'
+                    }
+                }
+            })
+            .state('app.content', {
+                url: '/content',
+                views: {
+                    menuContent: {
+                        templateUrl: 'modules/content/content.html',
+                        controller: 'contentCtrl',
+                        controllerAs: 'content'
+                    }
+                }
+            })
+            .state('app.gestures', {
+                url: '/gestures',
+                views: {
+                    menuContent: {
+                        templateUrl: 'modules/gestures/gestures.html',
+                        controller: 'gesturesCtrl',
+                        controllerAs: 'gestures'
+                    }
+                }
+            })
+            .state('app.loading', {
+                url: '/loading',
+                views: {
+                    menuContent: {
+                        templateUrl: 'modules/loading/loading.html',
+                        controller: 'loadingCtrl',
+                        controllerAs: 'loading'
+                    }
+                }
+            })
+            .state('app.modal', {
+                url: '/modal',
+                views: {
+                    menuContent: {
+                        templateUrl: 'modules/modal/modal.html',
+                        controller: 'modalCtrl',
+                        controllerAs: 'modal'
+                    }
+                }
+            })
+            .state('app.popover', {
+                url: '/popover',
+                views: {
+                    menuContent: {
+                        templateUrl: 'modules/popover/popover.html',
+                        controller: 'popoverCtrl',
+                        controllerAs: 'popover'
                     }
                 }
             });

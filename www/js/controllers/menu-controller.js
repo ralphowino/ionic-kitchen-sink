@@ -67,6 +67,8 @@
                 url = Env.srcUrl + 'email-composer.js';
             } else if ($state.current.name == 'app.social') {
                 url = Env.srcUrl + 'social-sharing.js';
+            }else if ($state.current.name == 'app.sheet') {
+                url = Env.srcUrl + 'native-action-sheet.js';
             }
 
             $cordovaInAppBrowser.open(url, '_system', options)
