@@ -1,0 +1,3 @@
+cordovaFileTransfer Component
+
+Tutorial Coming Soon

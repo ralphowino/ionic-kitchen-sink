@@ -14,7 +14,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash'])
         });
     })
     .constant('Env', {
-        "srcUrl": "http://git.ralphowino.com/ro/ionic-kitchen-sink/blob/master/src/",
+        "srcUrl": "http://git.ralphowino.com/ro/ionic-kitchen-sink/tree/master/www/modules/",
         "name": "local"
     })
     .config(function ($stateProvider, $urlRouterProvider) {
@@ -347,6 +347,16 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash'])
                         templateUrl: 'modules/popover/popover.html',
                         controller: 'popoverCtrl',
                         controllerAs: 'popover'
+                    }
+                }
+            })
+            .state('app.scroll', {
+                url: '/scroll',
+                views: {
+                    menuContent: {
+                        templateUrl: 'modules/scroll/scroll.html',
+                        controller: 'scrollCtrl',
+                        controllerAs: 'scroll'
                     }
                 }
             });

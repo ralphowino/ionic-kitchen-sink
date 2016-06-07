@@ -1,0 +1,3 @@
+cordovaBarcodeScanner Component
+
+Tutorial Coming Soon

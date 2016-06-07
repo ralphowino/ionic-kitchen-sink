@@ -101,6 +101,11 @@
                     name: 'Popover',
                     page: 'app.popover',
                     tags: ['popover']
+                },
+                {
+                    name: 'Ion Scroll',
+                    page: 'app.scroll',
+                    tags: ['scroll']
                 }
 
 

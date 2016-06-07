@@ -26,49 +26,65 @@
             var url = '';
 
             if ($state.current.name == 'app.buttons') {
-                url = Env.srcUrl + 'buttons.html';
+                url = Env.srcUrl + 'buttons';
             } else if ($state.current.name == 'app.form-elements') {
-                url = Env.srcUrl + 'form-elements.html';
+                url = Env.srcUrl + 'form-elements';
             } else if ($state.current.name == 'app.list-view') {
-                url = Env.srcUrl + 'list-view.html';
+                url = Env.srcUrl + 'list-view';
             } else if ($state.current.name == 'app.tabs') {
-                url = Env.srcUrl + 'tabs.html';
+                url = Env.srcUrl + 'tabs';
             } else if ($state.current.name == 'app.popup-alerts') {
-                url = Env.srcUrl + 'popup.js';
+                url = Env.srcUrl + 'popup';
             } else if ($state.current.name == 'app.cards') {
-                url = Env.srcUrl + 'cards.html';
+                url = Env.srcUrl + 'cards';
             } else if ($state.current.name == 'app.headers-footers') {
-                url = Env.srcUrl + 'headers-footers.html';
+                url = Env.srcUrl + 'headers-footers';
             } else if ($state.current.name == 'app.spinners') {
-                url = Env.srcUrl + 'spinners.html';
+                url = Env.srcUrl + 'spinners';
             } else if ($state.current.name == 'app.camera') {
-                url = Env.srcUrl + 'camera.js';
+                url = Env.srcUrl + 'camera';
             } else if ($state.current.name == 'app.browser') {
-                url = Env.srcUrl + 'inappbrowser.js';
+                url = Env.srcUrl + 'browser';
             } else if ($state.current.name == 'app.geo') {
-                url = Env.srcUrl + 'geolocation.js';
+                url = Env.srcUrl + 'geo';
             } else if ($state.current.name == 'app.vibration') {
-                url = Env.srcUrl + 'vibration.js';
+                url = Env.srcUrl + 'vibration';
             } else if ($state.current.name == 'app.file') {
-                url = Env.srcUrl + 'file-transfer.js';
+                url = Env.srcUrl + 'file';
             } else if ($state.current.name == 'app.media') {
-                url = Env.srcUrl + 'media.js';
+                url = Env.srcUrl + 'media';
             } else if ($state.current.name == 'app.action') {
-                url = Env.srcUrl + 'action-sheet.js';
+                url = Env.srcUrl + 'action';
             } else if ($state.current.name == 'app.availability') {
-                url = Env.srcUrl + 'app-availability.js';
+                url = Env.srcUrl + 'availability';
             } else if ($state.current.name == 'app.barcode') {
-                url = Env.srcUrl + 'barcode-scanner.js';
+                url = Env.srcUrl + 'barcode';
             } else if ($state.current.name == 'app.date') {
-                url = Env.srcUrl + 'datepicker.js';
+                url = Env.srcUrl + 'date';
             } else if ($state.current.name == 'app.toast') {
-                url = Env.srcUrl + 'toast.js';
+                url = Env.srcUrl + 'toast';
             } else if ($state.current.name == 'app.email') {
-                url = Env.srcUrl + 'email-composer.js';
+                url = Env.srcUrl + 'email';
             } else if ($state.current.name == 'app.social') {
-                url = Env.srcUrl + 'social-sharing.js';
+                url = Env.srcUrl + 'social';
             }else if ($state.current.name == 'app.sheet') {
-                url = Env.srcUrl + 'native-action-sheet.js';
+                url = Env.srcUrl + 'action-sheet';
+            }else if ($state.current.name == 'app.backdrop') {
+                url = Env.srcUrl + 'backdrop';
+            }else if ($state.current.name == 'app.content') {
+                url = Env.srcUrl + 'content';
+            }else if ($state.current.name == 'app.gestures') {
+                url = Env.srcUrl + 'gestures';
+            }else if ($state.current.name == 'app.grid') {
+                url = Env.srcUrl + 'grid';
+            }else if ($state.current.name == 'app.loading') {
+                url = Env.srcUrl + 'loading';
+            }else if ($state.current.name == 'app.modal') {
+                url = Env.srcUrl + 'modal';
+            }else if ($state.current.name == 'app.popover') {
+                url = Env.srcUrl + 'popover';
+            }else if ($state.current.name == 'app.scroll') {
+                url = Env.srcUrl + 'scroll';
             }
 
             $cordovaInAppBrowser.open(url, '_system', options)

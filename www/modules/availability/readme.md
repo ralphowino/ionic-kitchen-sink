@@ -1,0 +1,3 @@
+cordovaAppAvailability Component
+
+Tutorial coming soon
