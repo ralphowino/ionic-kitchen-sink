@@ -380,5 +380,5 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash'])
                     }
                 }
             });
-        $urlRouterProvider.otherwise("/app/home");
+        $urlRouterProvider.otherwise("/app/slides");
     });

@@ -17,7 +17,7 @@
         init();
 
         function init() {
-            if ($window.localStorage.getItem('tutorialCheck') == true) {
+            if ($window.localStorage.getItem('tutorialCheck')) {
                 $state.go('app.home');
             } else {
                 $window.localStorage.setItem('tutorialCheck', true);
