@@ -1,0 +1,75 @@
+<ion-view title="Quick Intro" hide-back-button="true">
+    <ion-content>
+        <ion-slide-box on-slide-changed="slides.slideHasChanged($index)">
+            <ion-slide>
+                <div class="">
+                    <h2>Welcome</h2>
+                    <p>
+                        This is an Ionic Kitchen Sink application featuring most of the components of the Ionic
+                        Framework and the Cordova Plugins.
+                    </p>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="">
+                    <h2>View Code</h2>
+                    <p>
+                        You can view the source code for the given component by viewing clicking the button on the
+                        top right corner of each page, then clicking on the 'View Code' option.
+                    </p>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="">
+                    <h2>Home Page</h2>
+                    <p>
+                        The home page consists of two buttons, one for the Native Components and one for the Cordova
+                        Plugins. They take you to the respective pages.
+                    </p>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="">
+                    <h2>Cordova Plugins</h2>
+                    <p>
+                        This page contains links to the various cordova plugins displayed in the Kitchen Sink.
+                    </p>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="">
+                    <h2>Native Elements</h2>
+                    <p>
+                        This is where the links to the various Ionic native elements are found. At the top of the
+                        page is a search box where you can filter through the displayed elements by searching for
+                        keywords eg.Searching for 'spinner' will filter for Spinner.
+                    </p>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+
+        <div class="bar bar-footer {{headers.class[headers.current]}}">
+            <div class="buttons">
+                <button class="button button-positive button-clear no-animation"
+                        ng-click="slides.startApp()" ng-show="!slides.slideIndex">
+                    Skip Intro
+                </button>
+                <button class="button button-positive button-clear no-animation "
+                        ng-click="slides.previous()" ng-show="slides.slideIndex > 0">
+                    Previous
+                </button>
+            </div>
+            <div class="title"></div>
+            <div class="buttons">
+                <button class="button button-positive button-clear no-animation"
+                        ng-click="slides.next()" ng-show="slides.slideIndex != 4">
+                    Next
+                </button>
+                <button class="button button-positive button-clear no-animation"
+                        ng-click="slides.startApp()" ng-show="slides.slideIndex == 4">
+                    Go To App
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

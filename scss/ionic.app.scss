@@ -63,3 +63,36 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   text-align: center;
   margin:5px ;
 }
+
+.slider {
+  height: 95%;
+}
+
+.slider-slide {
+  padding-top: 40px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+.context{
+  background-color: #fff!important;
+}
+
+.pop{
+  max-height:100px!important;
+  width:160px!important;
+}
+
+.pop-list{
+
+}
+
+.pop-item{
+  height: auto!important;
+  border: none!important;
+  padding: 5px!important;
+}

@@ -1,0 +1,12 @@
+<ion-popover-view class="context pop" >
+    <ion-content class="padding">
+        <ul class="list context pop-list">
+            <li class="item context pop-item" ng-click="menu.goToPage()" ng-if="menu.visible()">
+                View Code
+            </li>
+            <li class="item context pop-item" ng-click="menu.showIntroduction()" ng-if="menu.page()">
+                View Introduction
+            </li>
+        </ul>
+    </ion-content>
+</ion-popover-view>

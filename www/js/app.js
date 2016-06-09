@@ -65,6 +65,16 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash'])
                     }
                 }
             })
+            .state('app.slides', {
+                url: '/slides',
+                views: {
+                    menuContent: {
+                        templateUrl: 'modules/slides/slides.html',
+                        controller: 'slidesCtrl',
+                        controllerAs: 'slides'
+                    }
+                }
+            })
             .state('app.buttons', {
                 url: '/buttons',
                 views: {
@@ -357,6 +367,16 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash'])
                         templateUrl: 'modules/scroll/scroll.html',
                         controller: 'scrollCtrl',
                         controllerAs: 'scroll'
+                    }
+                }
+            })
+            .state('app.keyboard', {
+                url: '/keyboard',
+                views: {
+                    menuContent: {
+                        templateUrl: 'modules/keyboard/keyboard.html',
+                        controller: 'keyboardCtrl',
+                        controllerAs: 'keyboard'
                     }
                 }
             });

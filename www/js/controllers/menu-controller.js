@@ -2,18 +2,36 @@
     'use strict';
     angular.module('starter')
         .controller('menuCtrl', menuCtrl);
-    menuCtrl.$inject = ['$state', '$cordovaInAppBrowser', 'Env'];
+    menuCtrl.$inject = ['$ionicPopover', '$state', '$cordovaInAppBrowser', 'Env', '$scope', '$window'];
 
-    function menuCtrl($state, $cordovaInAppBrowser, Env) {
+    function menuCtrl($ionicPopover, $state, $cordovaInAppBrowser, Env, $scope, $window) {
         var vm = this;
         vm.init = init;
         vm.goToPage = goToPage;
         vm.visible = visible;
+        vm.showOptions = showOptions;
+        vm.showIntroduction = showIntroduction;
+        vm.page = page;
 
         vm.components = {};
+        vm.popover = {};
+
+        init();
 
         function init() {
+            $ionicPopover.fromTemplateUrl('templates/context-popover.html', {
+                scope: $scope
+            }).then(function (popover) {
+                vm.popover = popover;
+            });
+        }
 
+        function showOptions($event) {
+            vm.popover.show($event);
+        }
+
+        function showIntroduction() {
+            $state.go('app.slides');
         }
 
         function goToPage() {
@@ -67,24 +85,26 @@
                 url = Env.srcUrl + 'email';
             } else if ($state.current.name == 'app.social') {
                 url = Env.srcUrl + 'social';
-            }else if ($state.current.name == 'app.sheet') {
+            } else if ($state.current.name == 'app.sheet') {
                 url = Env.srcUrl + 'action-sheet';
-            }else if ($state.current.name == 'app.backdrop') {
+            } else if ($state.current.name == 'app.backdrop') {
                 url = Env.srcUrl + 'backdrop';
-            }else if ($state.current.name == 'app.content') {
+            } else if ($state.current.name == 'app.content') {
                 url = Env.srcUrl + 'content';
-            }else if ($state.current.name == 'app.gestures') {
+            } else if ($state.current.name == 'app.gestures') {
                 url = Env.srcUrl + 'gestures';
-            }else if ($state.current.name == 'app.grid') {
+            } else if ($state.current.name == 'app.grid') {
                 url = Env.srcUrl + 'grid';
-            }else if ($state.current.name == 'app.loading') {
+            } else if ($state.current.name == 'app.loading') {
                 url = Env.srcUrl + 'loading';
-            }else if ($state.current.name == 'app.modal') {
+            } else if ($state.current.name == 'app.modal') {
                 url = Env.srcUrl + 'modal';
-            }else if ($state.current.name == 'app.popover') {
+            } else if ($state.current.name == 'app.popover') {
                 url = Env.srcUrl + 'popover';
-            }else if ($state.current.name == 'app.scroll') {
+            } else if ($state.current.name == 'app.scroll') {
                 url = Env.srcUrl + 'scroll';
+            } else if ($state.current.name == 'app.slides') {
+                url = Env.srcUrl + 'slides';
             }
 
             $cordovaInAppBrowser.open(url, '_system', options)
@@ -99,6 +119,13 @@
         function visible() {
             if ($state.current.name == 'app.home' || $state.current.name == 'app.native' || $state.current.name == 'app.cordova') {
                 return false;
+            }
+            return true;
+        }
+
+        function page() {
+            if($state.current.name == 'app.slides'){
+                return false
             }
             return true;
         }

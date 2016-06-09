@@ -106,6 +106,11 @@
                     name: 'Ion Scroll',
                     page: 'app.scroll',
                     tags: ['scroll']
+                },
+                {
+                    name: 'Keyboard',
+                    page: 'app.keyboard',
+                    tags: ['keyboard']
                 }
 
 
