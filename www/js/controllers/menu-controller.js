@@ -105,6 +105,8 @@
                 url = Env.srcUrl + 'scroll';
             } else if ($state.current.name == 'app.slides') {
                 url = Env.srcUrl + 'slides';
+            } else if ($state.current.name == 'app.keyboard') {
+                url = Env.srcUrl + 'keyboard';
             }
 
             $cordovaInAppBrowser.open(url, '_system', options)

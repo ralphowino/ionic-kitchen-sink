@@ -6,11 +6,11 @@
 
     function gesturesCtrl($ionicPopup) {
         var vm = this;
-        vm.drag = '';
-        vm.dragUp = '';
-        vm.dragDown = '';
-        vm.dragRight = '';
-        vm.dragLeft = '';
+        vm.drag = 'On Drag';
+        vm.dragUp = 'On Drag Up ';
+        vm.dragDown = 'On Drag Down';
+        vm.dragRight = 'On Drag Right ';
+        vm.dragLeft = 'On Drag Left';
 
         vm.onHold = onHold;
         vm.onTap = onTap;
@@ -119,23 +119,23 @@
         }
 
         function onDrag() {
-            vm.drag = 'Dragging';
+            vm.drag = 'Dragging...';
         }
 
         function onDragUp() {
-            vm.dragUp = 'Dragging Up';
+            vm.dragUp = 'Dragging Up...';
         }
 
         function onDragRight() {
-            vm.dragRight = 'Dragging Right';
+            vm.dragRight = 'Dragging Right...';
         }
 
         function onDragLeft() {
-            vm.dragLeft = 'Dragging Left';
+            vm.dragLeft = 'Dragging Left...';
         }
 
         function onDragDown() {
-            vm.dragDown = 'Dragging Down';
+            vm.dragDown = 'Dragging Down...';
         }
 
         function onSwipe() {
