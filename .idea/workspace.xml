@@ -4,8 +4,6 @@
     <list default="true" id="8fa868ab-fff9-4280-a9eb-1c6041881bad" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/menu-controller.js" afterPath="$PROJECT_DIR$/www/js/controllers/menu-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/keyboard/keyboard.html" afterPath="$PROJECT_DIR$/www/modules/keyboard/keyboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/slides/slides.html" afterPath="$PROJECT_DIR$/www/modules/slides/slides.html" />
     </list>
     <ignored path="KitchenSink.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slides.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/modules/slides/slides.html">
+      <file leaf-file-name="slides-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/modules/slides/slides-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="85">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -57,8 +55,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
+            <state relative-caret-position="391">
               <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu-controller.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/controllers/menu-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -80,8 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/modules/popover/popover-controller.js" />
-        <option value="$PROJECT_DIR$/www/modules/popover/my-popover.html" />
         <option value="$PROJECT_DIR$/www/modules/popover/popover.html" />
         <option value="$PROJECT_DIR$/www/modules/scroll/scroll.html" />
         <option value="$PROJECT_DIR$/www/modules/scroll/scroll-controller.js" />
@@ -128,9 +134,11 @@
         <option value="$PROJECT_DIR$/www/modules/slides/slides-controller.js" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/modules/keyboard/readme.md" />
-        <option value="$PROJECT_DIR$/www/js/controllers/menu-controller.js" />
         <option value="$PROJECT_DIR$/www/modules/keyboard/keyboard.html" />
         <option value="$PROJECT_DIR$/www/modules/slides/slides.html" />
+        <option value="$PROJECT_DIR$/www/modules/gestures/gestures.html" />
+        <option value="$PROJECT_DIR$/www/modules/gestures/gestures-controller.js" />
+        <option value="$PROJECT_DIR$/www/js/controllers/menu-controller.js" />
       </list>
     </option>
   </component>
@@ -385,12 +393,12 @@
       <workItem from="1465409384797" duration="279000" />
       <workItem from="1465452065202" duration="22864000" />
       <workItem from="1465486156354" duration="2607000" />
-      <workItem from="1465534753294" duration="459000" />
+      <workItem from="1465534753294" duration="2171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26209000" />
+    <option name="totallyTimeSpent" value="27921000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -402,7 +410,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -475,43 +483,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/modules/geo/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/modules/geo/geo-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/modules/gestures/readme.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/modules/gestures/gestures-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#882#1420#0" expanded="false" />
-            <element signature="e#1447#1966#0" expanded="false" />
-            <element signature="e#1999#2531#0" expanded="false" />
-            <element signature="e#2560#3110#0" expanded="false" />
-            <element signature="e#3141#3673#0" expanded="false" />
-            <element signature="e#4116#4676#0" expanded="false" />
-            <element signature="e#4707#5263#0" expanded="false" />
-            <element signature="e#5296#5863#0" expanded="false" />
-            <element signature="e#5897#6466#0" expanded="false" />
-            <element signature="e#6499#7059#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -789,34 +764,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/modules/keyboard/readme.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/modules/keyboard/keyboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/modules/slides/slides-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -829,10 +780,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/menu-controller.js">
+    <entry file="file://$PROJECT_DIR$/www/modules/slides/slides.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
+        <state relative-caret-position="195">
+          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/modules/scroll/scroll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#ion-scroll#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#ion-scroll#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/modules/gestures/gestures-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding>
+            <element signature="e#938#1476#0" expanded="false" />
+            <element signature="e#1503#2022#0" expanded="false" />
+            <element signature="e#2055#2587#0" expanded="false" />
+            <element signature="e#2616#3166#0" expanded="false" />
+            <element signature="e#3197#3729#0" expanded="false" />
+            <element signature="e#4187#4747#0" expanded="false" />
+            <element signature="e#4778#5334#0" expanded="false" />
+            <element signature="e#5367#5934#0" expanded="false" />
+            <element signature="e#5968#6537#0" expanded="false" />
+            <element signature="e#6570#7130#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/modules/gestures/gestures.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/modules/keyboard/keyboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -845,10 +842,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/modules/slides/slides.html">
+    <entry file="file://$PROJECT_DIR$/www/modules/slides/slides-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/menu-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
           <folding />
         </state>
       </provider>

@@ -31,6 +31,7 @@
         }
 
         function showIntroduction() {
+            $window.localStorage.removeItem('tutorialCheck');
             $state.go('app.slides');
         }
 
