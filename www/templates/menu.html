@@ -3,12 +3,9 @@
         <ion-nav-bar class="bar-positive">
             <ion-nav-back-button></ion-nav-back-button>
             <ion-nav-buttons side="right">
-                <button class="button button-icon button-clear ion-android-more-vertical"
-                        ng-click="menu.showOptions($event)">
+                <button class="button button-icon button-clear ion-share"
+                        ng-click="menu.goToPage()" ng-if="menu.visible()">
                 </button>
-                <!--<button class="button button-icon button-clear ion-android-more-vertical"-->
-                        <!--ng-click="menu.goToPage()" ng-if="menu.visible()">-->
-                <!--</button>-->
             </ion-nav-buttons>
         </ion-nav-bar>
         <ion-nav-view name="menuContent"></ion-nav-view>

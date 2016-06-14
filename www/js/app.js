@@ -31,7 +31,8 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash'])
                 views: {
                     menuContent: {
                         templateUrl: 'templates/home.html',
-                        controller: 'homeCtrl'
+                        controller: 'homeCtrl',
+                        controllerAs:'home'
                     }
                 }
             })

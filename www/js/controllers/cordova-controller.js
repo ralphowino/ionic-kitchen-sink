@@ -14,36 +14,6 @@
             name: 'cordova',
             plugins: [
                 {
-                    name: 'Camera',
-                    page: 'app.camera',
-                    tags: []
-                },
-                {
-                    name: 'InAppBrowser',
-                    page: 'app.browser',
-                    tags: []
-                },
-                {
-                    name: 'Geolocation',
-                    page: 'app.geo',
-                    tags: []
-                },
-                {
-                    name: 'Vibration',
-                    page: 'app.vibration',
-                    tags: []
-                },
-                {
-                    name: 'File Transfer',
-                    page: 'app.file',
-                    tags: []
-                },
-                {
-                    name: 'Media',
-                    page: 'app.media',
-                    tags: []
-                },
-                {
                     name: 'Action Sheet',
                     page: 'app.action',
                     tags: []
@@ -59,13 +29,13 @@
                     tags: []
                 },
                 {
-                    name: 'Date Picker',
-                    page: 'app.date',
+                    name: 'Camera',
+                    page: 'app.camera',
                     tags: []
                 },
                 {
-                    name: 'Toast',
-                    page: 'app.toast',
+                    name: 'Date Picker',
+                    page: 'app.date',
                     tags: []
                 },
                 {
@@ -74,8 +44,38 @@
                     tags: []
                 },
                 {
+                    name: 'File Transfer',
+                    page: 'app.file',
+                    tags: []
+                },
+                {
+                    name: 'Geolocation',
+                    page: 'app.geo',
+                    tags: []
+                },
+                {
+                    name: 'InAppBrowser',
+                    page: 'app.browser',
+                    tags: []
+                },
+                {
+                    name: 'Media',
+                    page: 'app.media',
+                    tags: []
+                },
+                {
                     name: 'Social Sharing',
                     page: 'app.social',
+                    tags: []
+                },
+                {
+                    name: 'Toast',
+                    page: 'app.toast',
+                    tags: []
+                },
+                {
+                    name: 'Vibration',
+                    page: 'app.vibration',
                     tags: []
                 }
             ],

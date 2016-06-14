@@ -2,16 +2,13 @@
     'use strict';
     angular.module('starter')
         .controller('menuCtrl', menuCtrl);
-    menuCtrl.$inject = ['$ionicPopover', '$state', '$cordovaInAppBrowser', 'Env', '$scope', '$window'];
+    menuCtrl.$inject = ['$state', '$cordovaInAppBrowser', 'Env'];
 
-    function menuCtrl($ionicPopover, $state, $cordovaInAppBrowser, Env, $scope, $window) {
+    function menuCtrl( $state, $cordovaInAppBrowser, Env) {
         var vm = this;
         vm.init = init;
         vm.goToPage = goToPage;
         vm.visible = visible;
-        vm.showOptions = showOptions;
-        vm.showIntroduction = showIntroduction;
-        vm.page = page;
 
         vm.components = {};
         vm.popover = {};
@@ -19,21 +16,9 @@
         init();
 
         function init() {
-            $ionicPopover.fromTemplateUrl('templates/context-popover.html', {
-                scope: $scope
-            }).then(function (popover) {
-                vm.popover = popover;
-            });
+           
         }
-
-        function showOptions($event) {
-            vm.popover.show($event);
-        }
-
-        function showIntroduction() {
-            $window.localStorage.removeItem('tutorialCheck');
-            $state.go('app.slides');
-        }
+        
 
         function goToPage() {
             var options = {
@@ -122,13 +107,6 @@
         function visible() {
             if ($state.current.name == 'app.home' || $state.current.name == 'app.native' || $state.current.name == 'app.cordova') {
                 return false;
-            }
-            return true;
-        }
-
-        function page() {
-            if($state.current.name == 'app.slides'){
-                return false
             }
             return true;
         }
