@@ -1,4 +1,3 @@
-
 # Ralphowino Ionic KitchenSink
 
 
@@ -28,7 +27,7 @@ A Kitchen Sink application featuring all the elements and plugins required by Io
 ----------
 
 
- ####-  Cordova Plugins
+ -####  Cordova Plugins
 	 - [cordovaActionSheet](#cordovaActionSheet)
 	 - [cordovaAppAvailability](#cordovaAppAvailability)
 	 - [cordovaBarcodeScanner](#cordovaBarcodeScanner)
@@ -42,7 +41,7 @@ A Kitchen Sink application featuring all the elements and plugins required by Io
 	 - [cordovaSocialSharing](#cordovaSocialSharing) 
 	 - [cordovaToast](#cordovaToast) 
 	 - [cordovaVibration](#cordovaVibration)
- - #### Ionic Native Elements
+ -#### Ionic Native Elements
 	 - [Action Sheet](#action-sheet)
 	 - [Backdrop](#backdrop)
 	 - [Buttons](#buttons)
