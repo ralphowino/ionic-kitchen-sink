@@ -52,7 +52,7 @@
                             clearcache: 'yes',
                             toolbar: 'no'
                         };
-                        var url = 'http://git.ralphowino.com/ro/ionic-kitchen-sink/issues';
+                        var url = 'https://github.com/ralphowino/ionic-kitchen-sink/issues';
                         $cordovaInAppBrowser.open(url, '_system', options)
                             .then(function (event) {
                                 // success

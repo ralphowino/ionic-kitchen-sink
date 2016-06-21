@@ -14,7 +14,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'ngLodash'])
         });
     })
     .constant('Env', {
-        "srcUrl": "http://git.ralphowino.com/ro/ionic-kitchen-sink/tree/master/www/modules/",
+        "srcUrl": "https://github.com/ralphowino/ionic-kitchen-sink/tree/master/www/modules/",
         "name": "local"
     })
     .config(function ($stateProvider, $urlRouterProvider) {
