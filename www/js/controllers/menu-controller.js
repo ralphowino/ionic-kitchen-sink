@@ -2,12 +2,13 @@
     'use strict';
     angular.module('starter')
         .controller('menuCtrl', menuCtrl);
-    menuCtrl.$inject = ['$state', '$cordovaInAppBrowser', 'Env'];
+    menuCtrl.$inject = ['$state', '$cordovaInAppBrowser','$window', 'Env'];
 
-    function menuCtrl( $state, $cordovaInAppBrowser, Env) {
+    function menuCtrl($state, $cordovaInAppBrowser,$window, Env) {
         var vm = this;
         vm.init = init;
         vm.goToPage = goToPage;
+        vm.goToIntro = goToIntro;
         vm.visible = visible;
 
         vm.components = {};
@@ -19,6 +20,10 @@
            
         }
         
+        function goToIntro() {
+            $window.localStorage.removeItem('tutorialCheck');
+            $state.go('app.slides');
+        }
 
         function goToPage() {
             var options = {

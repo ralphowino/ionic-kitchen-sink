@@ -2,9 +2,9 @@
     'use strict';
     angular.module('starter')
         .controller('backdropCtrl', backdropCtrl);
-    backdropCtrl.$inject = ['$ionicBackdrop', '$timeout'];
+    backdropCtrl.$inject = ['$ionicBackdrop','$ionicLoading', '$scope','$timeout'];
 
-    function backdropCtrl($ionicBackdrop, $timeout) {
+    function backdropCtrl($ionicBackdrop, $ionicLoading, $scope,$timeout) {
         var vm = this;
         vm.action = action;
 
@@ -14,6 +14,13 @@
                 $ionicBackdrop.release();
             }, 1000);
         }
+
+        $scope.$on('backdrop.shown', function() {
+            $ionicLoading.show({
+                template: 'Loading...',
+                duration:1000
+            });
+        });
     }
 })();
 

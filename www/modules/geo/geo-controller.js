@@ -14,6 +14,8 @@
                 .then(function (position) {
                     vm.lat = position.coords.latitude;
                     vm.long = position.coords.longitude;
+                    vm.altitude = position.coords.altitude;
+                    vm.speed = position.coords.speed;
                     console.log(position);
                 }, function (err) {
                     // error

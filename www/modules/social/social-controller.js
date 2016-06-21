@@ -9,7 +9,7 @@
         vm.shareTwitter = shareTwitter;
         vm.shareFacebook = shareFacebook;
         vm.shareWhatsapp = shareWhatsapp;
-        vm.message = "Default message";
+        vm.message = "Checkout the Ralphowino KitchenSink at https://github.com/ralphowino/ionic-kitchen-sink";
         vm.feedback = '';
 
         function shareTwitter() {

@@ -10,6 +10,8 @@
 
         vm.show = show;
         vm.hide = hide;
+        vm.showSecond = showSecond;
+        vm.hideSecond = hideSecond;
 
         init();
 
@@ -23,11 +25,25 @@
         }
 
         function show() {
+            $ionicModal.fromTemplateUrl('modules/modal/another-modal.html', {
+                scope: $scope,
+                animation: 'slide-in-up'
+            }).then(function (modal) {
+                vm.secModal = modal;
+            });
             vm.modal.show();
         }
 
         function hide() {
             vm.modal.hide();
+        }
+
+        function showSecond() {
+            vm.secModal.show();
+        }
+
+        function hideSecond() {
+            vm.secModal.hide();
         }
     }
 })();
