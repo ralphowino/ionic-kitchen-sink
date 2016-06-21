@@ -2,21 +2,18 @@
     'use strict';
     angular.module('starter')
         .controller('mediaCtrl', mediaCtrl);
-    mediaCtrl.$inject = ['$cordovaMedia','$state'];
+    mediaCtrl.$inject = ['$cordovaMedia','$scope'];
 
-    function mediaCtrl($cordovaMedia,$state) {
+    function mediaCtrl($cordovaMedia,$scope) {
         var vm = this;
         vm.play = play;
         vm.pause = pause;
         vm.stop = stop;
-        vm.onStateChange = onStateChange;
         vm.showIcon = true;
 
         vm.src = '/android_asset/www/media/ode.mp3';
         vm.media = $cordovaMedia.newMedia(vm.src);
-
-        $state.current.onExit = vm.onStateChange();
-
+        
         function play(){
             vm.media.play();
             vm.showIcon = false;
@@ -31,10 +28,10 @@
             vm.media.stop();
         }
 
-        function onStateChange() {
+        $scope.$on('$ionicView.afterLeave', function(){
             vm.media.stop();
-        }
-
+            vm.media.release();
+        });
     }
 })();
 

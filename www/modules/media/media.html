@@ -19,11 +19,11 @@
                     <div class="button-bar">
                         <button class="button button-icon ion-play"
                                 ng-click="media.play()"
-                                ng-if="media.showIcon">
+                                ng-show="media.showIcon">
                         </button>
                         <button class="button button-icon ion-pause"
                                 ng-click="media.pause()"
-                                ng-if="!media.showIcon">
+                                ng-show="!media.showIcon">
                         </button>
                         <button class="button button-icon ion-stop" ng-click="media.stop()">
                         </button>
