@@ -3,23 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8fa868ab-fff9-4280-a9eb-1c6041881bad" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/ionic.app.scss" afterPath="$PROJECT_DIR$/scss/ionic.app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/ionic.app.css" afterPath="$PROJECT_DIR$/www/css/ionic.app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/ionic.app.min.css" afterPath="$PROJECT_DIR$/www/css/ionic.app.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/home-controller.js" afterPath="$PROJECT_DIR$/www/js/controllers/home-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/menu-controller.js" afterPath="$PROJECT_DIR$/www/js/controllers/menu-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/backdrop/backdrop-controller.js" afterPath="$PROJECT_DIR$/www/modules/backdrop/backdrop-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/content/content.html" afterPath="$PROJECT_DIR$/www/modules/content/content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/geo/geo-controller.js" afterPath="$PROJECT_DIR$/www/modules/geo/geo-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/geo/geo.html" afterPath="$PROJECT_DIR$/www/modules/geo/geo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/media/media-controller.js" afterPath="$PROJECT_DIR$/www/modules/media/media-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/media/media.html" afterPath="$PROJECT_DIR$/www/modules/media/media.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/modal/modal-controller.js" afterPath="$PROJECT_DIR$/www/modules/modal/modal-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/modal/my-modal.html" afterPath="$PROJECT_DIR$/www/modules/modal/my-modal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/social/social-controller.js" afterPath="$PROJECT_DIR$/www/modules/social/social-controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/social/social.html" afterPath="$PROJECT_DIR$/www/modules/social/social.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/home.html" afterPath="$PROJECT_DIR$/www/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/menu.html" afterPath="$PROJECT_DIR$/www/templates/menu.html" />
     </list>
     <ignored path="KitchenSink.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,8 +64,8 @@
       <file leaf-file-name="ionic.app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="123" column="13" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+            <state relative-caret-position="259">
+              <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -365,12 +348,12 @@
       <workItem from="1466182414820" duration="636000" />
       <workItem from="1466310992226" duration="32000" />
       <workItem from="1466486206300" duration="1735000" />
-      <workItem from="1466489566212" duration="14846000" />
+      <workItem from="1466489566212" duration="15465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66699000" />
+    <option name="totallyTimeSpent" value="67318000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -382,8 +365,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38653556" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -392,7 +375,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31751227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31751227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -857,8 +840,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="123" column="13" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+        <state relative-caret-position="259">
+          <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
           <folding />
         </state>
       </provider>
